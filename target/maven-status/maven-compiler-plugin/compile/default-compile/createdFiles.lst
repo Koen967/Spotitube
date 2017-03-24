@@ -6,3 +6,4 @@ oose\dea\presentation\domainmodel\Track.class
 oose\dea\dataAccess\PlaylistDAO.class
 oose\dea\dataAccess\databaseConnection\DatabaseConnection.class
 oose\dea\presentation\domainmodel\Availability.class
+oose\dea\service\PlaylistService.class
