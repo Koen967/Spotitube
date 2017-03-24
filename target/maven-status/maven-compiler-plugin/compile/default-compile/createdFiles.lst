@@ -1,0 +1,8 @@
+oose\dea\presentation\domainmodel\Video.class
+oose\dea\presentation\domainmodel\Song.class
+oose\dea\dataAccess\playlistDAOImpl.class
+oose\dea\presentation\domainmodel\Playlist.class
+oose\dea\presentation\domainmodel\Track.class
+oose\dea\dataAccess\PlaylistDAO.class
+oose\dea\dataAccess\databaseConnection\DatabaseConnection.class
+oose\dea\presentation\domainmodel\Availability.class
