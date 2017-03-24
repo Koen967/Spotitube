@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by koen on 24-3-2017.
  */
-public class playlistDAOImpl implements PlaylistDAO {
+public class PlaylistDAOImpl implements PlaylistDAO {
     DatabaseConnection connection = new DatabaseConnection();
     Connection conn = connection.getConnection();
 

@@ -17,8 +17,8 @@ import java.util.List;
  */
 @WebServlet("/managePlaylistView")
 public class ManagePlaylistViewController extends HttpServlet {
-    @Inject
-    PlaylistService service;
+
+    PlaylistService service = new PlaylistService();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String ownerName = request.getParameter("ownerName");
