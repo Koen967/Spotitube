@@ -36,4 +36,18 @@ public class PlaylistDAOImpl implements PlaylistDAO {
 
         return playlists;
     }
+
+    public void updatePlaylistName(String ownerName, String oldName, String newName) {
+        try{
+            PreparedStatement preparedStatement;
+            String query = "UPDATE Playlist SET playlistName = ? WHERE ownerName = ? AND playlistName = ?";
+            preparedStatement = conn.prepareStatement(query);
+            preparedStatement.setString(1, newName);
+            preparedStatement.setString(2, ownerName);
+            preparedStatement.setString(3, oldName);
+            preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

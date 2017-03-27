@@ -24,4 +24,8 @@ public class PlaylistService {
 //        playlistList.add(playlist1);
 //        return playlistList;
     }
+
+    public void updatePlaylistName(String ownerName, String oldName, String newName) {
+        dao.updatePlaylistName(ownerName, oldName, newName);
+    }
 }
