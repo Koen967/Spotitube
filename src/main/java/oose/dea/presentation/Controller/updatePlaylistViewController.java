@@ -31,6 +31,8 @@ public class updatePlaylistViewController extends HttpServlet {
         if (request.getParameter("confirm") != null) {
             service.updatePlaylistName(ownerName, oldName, newName);
             response.sendRedirect(uri + "/managePlaylistView?ownerName=" + ownerName);
+        } else if (request.getParameter("cancel") != null) {
+            response.sendRedirect(uri + "/managePlaylistView?ownerName=" + ownerName);
         }
     }
 }

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cca11621-8f5c-4634-abcb-7e6345fbe4eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/updatePlaylistView.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/PlaylistDAO.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/PlaylistDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/playlistDAOImpl.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/playlistDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/Controller/ManagePlaylistViewController.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/Controller/ManagePlaylistViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/service/PlaylistService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/PlaylistDAO.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/PlaylistDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/playlistDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/playlistDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/presentation/Controller/ManagePlaylistViewController.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/presentation/Controller/ManagePlaylistViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/service/PlaylistService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/playlistDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/playlistDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/ManagePlaylistViewController.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/ManagePlaylistViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="Spotitube.iws" />
@@ -94,8 +81,8 @@
       <file leaf-file-name="updatePlaylistViewController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79818594">
-              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.8979592">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -931,7 +918,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12690000" />
+    <option name="totallyTimeSpent" value="12810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1290,8 +1277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79818594">
-          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.8979592">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
