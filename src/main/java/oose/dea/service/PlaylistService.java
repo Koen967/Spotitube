@@ -4,6 +4,7 @@ import oose.dea.dataAccess.PlaylistDAO;
 import oose.dea.dataAccess.PlaylistDAOImpl;
 import oose.dea.presentation.domainmodel.Playlist;
 
+import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +12,11 @@ import java.util.List;
 /**
  * Created by koen on 24-3-2017.
  */
+@Dependent
 public class PlaylistService {
 
-    PlaylistDAO dao = new PlaylistDAOImpl();
+    @Inject
+    PlaylistDAO dao;
 
     public List<Playlist> getPlaylistsFromOwner(String ownerName) {
         return  dao.getPlaylistsFromOwner(ownerName);

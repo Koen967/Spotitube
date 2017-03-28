@@ -19,6 +19,29 @@
 </head>
 <body>
 <div class="row" id="body">
+    <div class="row table-cell">
+            <div class="col-md-2">
+                <h5>Title</h5>
+            </div>
+            <div class="col-md-2">
+                <h5>Performer</h5>
+            </div>
+            <div class="col-md-1">
+                <h5>Duration</h5>
+            </div>
+            <div class="col-md-2">
+                <h5>Ablum</h5>
+            </div>
+            <div class="col-md-1">
+                <h5>Play count</h5>
+            </div>
+            <div class="col-md-1">
+                <h5>Publication date</h5>
+            </div>
+            <div class="col-md-2">
+                <h5>Description</h5>
+            </div>
+    </div>
     <c:forEach items="${trackList}" var="current">
         <div class="row table-cell">
             <form method="post">
@@ -50,6 +73,8 @@
     <div class="row">
         <form method="post">
             <button class="btn btn-default col-md-2 col-md-offset-1" type="submit" name="back" value="back">Terug</button>
+            <input type="search" class="col-md-2"  name="searchField">
+            <button class="btn btn-default col-md-2" type="submit" name="search" value="search">Zoek</button>
         </form>
     </div>
 </div>

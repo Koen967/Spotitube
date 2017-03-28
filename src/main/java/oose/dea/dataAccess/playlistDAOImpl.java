@@ -3,6 +3,7 @@ package oose.dea.dataAccess;
 import oose.dea.dataAccess.databaseConnection.DatabaseConnection;
 import oose.dea.presentation.domainmodel.Playlist;
 
+import javax.enterprise.context.Dependent;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,6 +14,7 @@ import java.util.List;
 /**
  * Created by koen on 24-3-2017.
  */
+@Dependent
 public class PlaylistDAOImpl implements PlaylistDAO {
     DatabaseConnection connection = new DatabaseConnection();
     Connection conn = connection.getConnection();

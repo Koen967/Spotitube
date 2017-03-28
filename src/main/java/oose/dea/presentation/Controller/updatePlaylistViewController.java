@@ -2,6 +2,7 @@ package oose.dea.presentation.Controller;
 
 import oose.dea.service.PlaylistService;
 
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,7 +16,8 @@ import java.io.IOException;
 @WebServlet("/updatePlaylistView")
 public class updatePlaylistViewController extends HttpServlet {
 
-    PlaylistService service = new PlaylistService();
+    @Inject
+    PlaylistService service;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String playlistName = request.getParameter("name");

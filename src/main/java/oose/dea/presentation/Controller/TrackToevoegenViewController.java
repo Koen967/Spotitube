@@ -4,6 +4,7 @@ import oose.dea.presentation.domainmodel.Track;
 import oose.dea.service.PlaylistService;
 import oose.dea.service.TrackService;
 
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +19,10 @@ import java.util.List;
 @WebServlet("/trackToevoegenView")
 public class TrackToevoegenViewController extends HttpServlet {
 
-    TrackService trackService = new TrackService();
-    PlaylistService playlistService = new PlaylistService();
+    @Inject
+    TrackService trackService;
+    @Inject
+    PlaylistService playlistService;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Track> trackList = trackService.getTracksNotInPlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"));
@@ -34,6 +37,8 @@ public class TrackToevoegenViewController extends HttpServlet {
             response.sendRedirect(uri + "/trackToevoegenView?name=" + request.getParameter("name"));
         } else if (request.getParameter("back") != null) {
             response.sendRedirect(uri + "/managePlaylistView?ownerName=" + request.getSession().getAttribute("ownerName").toString());
+        } else if (request.getParameter("search") != null) {
+
         }
     }
 }

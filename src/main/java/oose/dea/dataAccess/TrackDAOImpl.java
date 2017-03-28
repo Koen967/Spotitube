@@ -6,6 +6,7 @@ import oose.dea.presentation.domainmodel.Song;
 import oose.dea.presentation.domainmodel.Track;
 import oose.dea.presentation.domainmodel.Video;
 
+import javax.enterprise.context.Dependent;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -14,6 +15,7 @@ import java.util.List;
 /**
  * Created by koen on 27-3-2017.
  */
+@Dependent
 public class TrackDAOImpl implements TrackDAO {
     DatabaseConnection connection = new DatabaseConnection();
     Connection conn = connection.getConnection();
@@ -25,14 +27,6 @@ public class TrackDAOImpl implements TrackDAO {
             cs.setString(1, ownerName);
             cs.setString(2, playlistName);
             ResultSet rs = cs.executeQuery();
-//            PreparedStatement preparedStatement;
-//            String query = "SELECT * FROM Track EXCEPT SELECT * FROM Track WHERE performer IN (SELECT performer FROM [Availability] WHERE ownerName = ? AND playlistName = ?) AND title IN (SELECT title FROM [Availability] WHERE ownerName = ? AND playlistName = ?)";
-//            preparedStatement = conn.prepareStatement(query);
-//            preparedStatement.setString(1, ownerName);
-//            preparedStatement.setString(2, playlistName);
-//            preparedStatement.setString(3, ownerName);
-//            preparedStatement.setString(4, playlistName);
-//            ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 String performer = rs.getString("performer");
                 String title = rs.getString("title");

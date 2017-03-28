@@ -6,6 +6,8 @@ import oose.dea.presentation.domainmodel.Song;
 import oose.dea.presentation.domainmodel.Track;
 import oose.dea.presentation.domainmodel.Video;
 
+import javax.enterprise.context.Dependent;
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -13,9 +15,11 @@ import java.util.List;
 /**
  * Created by koen on 27-3-2017.
  */
+@Dependent
 public class TrackService {
 
-    TrackDAO dao = new TrackDAOImpl();
+    @Inject
+    TrackDAO dao;
 
     public List<Track> getTracksNotInPlaylist(String ownerName, String playlistName) {
         return dao.getTracksNotInPlaylist(ownerName, playlistName);
