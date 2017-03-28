@@ -18,16 +18,22 @@ import java.util.List;
 @WebServlet("/trackToevoegenView")
 public class TrackToevoegenViewController extends HttpServlet {
 
-    TrackService service = new TrackService();
+    TrackService trackService = new TrackService();
+    PlaylistService playlistService = new PlaylistService();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Track> trackList = service.getTracksNotInPlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"));
+        List<Track> trackList = trackService.getTracksNotInPlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"));
         request.setAttribute("trackList", trackList);
-//        response.sendRedirect(request.getSession().getAttribute("ownerName").toString() + " + " + request.getParameter("name"));
         request.getRequestDispatcher("trackToevoegenView.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String uri = request.getContextPath();
+        if (request.getParameter("add") != null) {
+            playlistService.addTrackToPlaylist(request.getParameter("title"), request.getParameter("performer"), request.getParameter("name"), request.getSession().getAttribute("ownerName").toString());
+            response.sendRedirect(uri + "/trackToevoegenView?name=" + request.getParameter("name"));
+        } else if (request.getParameter("back") != null) {
+            response.sendRedirect(uri + "/managePlaylistView?ownerName=" + request.getSession().getAttribute("ownerName").toString());
+        }
     }
 }

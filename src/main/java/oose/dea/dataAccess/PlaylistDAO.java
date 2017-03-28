@@ -10,4 +10,5 @@ import java.util.List;
 public interface PlaylistDAO {
     List<Playlist> getPlaylistsFromOwner(String ownerName);
     void updatePlaylistName(String ownerName, String oldName, String newName);
+    void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName);
 }

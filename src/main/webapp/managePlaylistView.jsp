@@ -43,12 +43,14 @@
         <p>Totale lengte is ... uur</p>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <button class="btn btn-default" type="submit">Nieuwe playlist</button>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-default" type="submit">Zoek track</button>
-        </div>
+        <form method="post">
+            <div class="col-md-3">
+                <button class="btn btn-default" type="submit" name="create" value="create">Nieuwe playlist</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-default" type="submit" name="search" value="search">Zoek track</button>
+            </div>
+        </form>
     </div>
 </div>
 </body>

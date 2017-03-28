@@ -20,31 +20,38 @@
 <body>
 <div class="row" id="body">
     <c:forEach items="${trackList}" var="current">
-        <div class="row">
-            <div class="col-md-2 table-cell">
-                <p id="title"><c:out value="${current.getTitle()}"/> </p>
-            </div>
-            <div class="col-md-2 table-cell">
-                <p id="performer"><c:out value="${current.getPerformer()}"/></p>
-            </div>
-            <div class="col-md-1 table-cell">
-                <p id="duration"><c:out value="${current.getDuration()}"/></p>
-            </div>
-            <div class="col-md-2 table-cell">
-                <p id="album"><c:out value="${current.getAlbum()}"/></p>
-            </div>
-            <div class="col-md-1 table-cell">
-                <p id="playCount"><c:out value="${current.getPlayCount()}"/></p>
-            </div>
-            <div class="col-md-1 table-cell">
-                <p id="publicationDate"><c:out value="${current.getPublicationDatePrintable()}"/></p>
-            </div>
-            <div class="col-md-2 table-cell">
-                <p id="description"><c:out value="${current.getDescription()}"/></p>
-            </div>
-            <button class="btn btn-default" type="submit" name="add" value="add">+</button>
+        <div class="row table-cell">
+            <form method="post">
+                <div class="col-md-2">
+                    <input type="text" name="title" value="<c:out value="${current.getTitle()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="performer" value="<c:out value="${current.getPerformer()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-1">
+                    <input type="text" name="duration" value="<c:out value="${current.getDuration()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="album" value="<c:out value="${current.getAlbum()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-1">
+                    <input type="text" name="playCount" value="<c:out value="${current.getPlayCount()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-1">
+                    <input type="text" name="publicationDate" value="<c:out value="${current.getPublicationDatePrintable()}"/>" class="form-control" readonly>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="description" value="<c:out value="${current.getDescription()}"/>" class="form-control" readonly>
+                </div>
+                <button class="btn btn-default" type="submit" name="add" value="add">+</button>
+            </form>
         </div>
     </c:forEach>
+    <div class="row">
+        <form method="post">
+            <button class="btn btn-default col-md-2 col-md-offset-1" type="submit" name="back" value="back">Terug</button>
+        </form>
+    </div>
 </div>
 </body>
 </html>

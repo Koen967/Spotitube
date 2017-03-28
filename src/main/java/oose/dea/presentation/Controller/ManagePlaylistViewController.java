@@ -35,6 +35,8 @@ public class ManagePlaylistViewController extends HttpServlet {
             response.sendRedirect(uri + "/updatePlaylistView?name=" + name);
         } else if (request.getParameter("add") != null) {
             response.sendRedirect(uri + "/trackToevoegenView?name=" + name);
+        } else if (request.getParameter("create") != null) {
+            response.sendRedirect(uri + "/trackToevoegenView");
         }
     }
 }

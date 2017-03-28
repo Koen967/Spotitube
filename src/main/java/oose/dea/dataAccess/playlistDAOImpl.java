@@ -50,4 +50,19 @@ public class PlaylistDAOImpl implements PlaylistDAO {
             e.printStackTrace();
         }
     }
+
+    public void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName) {
+        try {
+            PreparedStatement preparedStatement;
+            String query = "INSERT INTO Availability VALUES (?, ?, ?, ?, 0)";
+            preparedStatement = conn.prepareStatement(query);
+            preparedStatement.setString(1, ownerName);
+            preparedStatement.setString(2, playlistName);
+            preparedStatement.setString(3, performer);
+            preparedStatement.setString(4, title);
+            preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

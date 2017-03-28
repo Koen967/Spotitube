@@ -28,4 +28,8 @@ public class PlaylistService {
     public void updatePlaylistName(String ownerName, String oldName, String newName) {
         dao.updatePlaylistName(ownerName, oldName, newName);
     }
+
+    public void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName) {
+        dao.addTrackToPlaylist(title, performer, playlistName, ownerName);
+    }
 }
