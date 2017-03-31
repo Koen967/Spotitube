@@ -1,4 +1,4 @@
-package oose.dea.presentation.Controller;
+package oose.dea.presentation.controller;
 
 import oose.dea.presentation.domainmodel.Playlist;
 import oose.dea.service.PlaylistService;

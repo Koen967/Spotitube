@@ -35,7 +35,6 @@ public class PlaylistDAOImpl implements PlaylistDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return playlists;
     }
 
@@ -66,5 +65,25 @@ public class PlaylistDAOImpl implements PlaylistDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public Playlist getPlaylist(String ownerName, String playlistName) {
+        try{
+            PreparedStatement preparedStatement;
+            String query = "SELECT playlistName FROM Playlist WHERE ownerName = ? AND playlistName = ?";
+            preparedStatement = conn.prepareStatement(query);
+            preparedStatement.setString(1, ownerName);
+            preparedStatement.setString(2, playlistName);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                ownerName = rs.getString("ownerName");
+                playlistName = rs.getString("playlistName");
+                Playlist playlist = new Playlist(ownerName, playlistName);
+                return playlist;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

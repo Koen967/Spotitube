@@ -1,7 +1,6 @@
 package oose.dea.presentation.domainmodel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by koen on 24-3-2017.

@@ -20,12 +20,6 @@ public class PlaylistService {
 
     public List<Playlist> getPlaylistsFromOwner(String ownerName) {
         return  dao.getPlaylistsFromOwner(ownerName);
-//        List<Playlist> playlistList = new ArrayList<Playlist>();
-//        Playlist playlist = new Playlist("Koen", "Playlist1");
-//        Playlist playlist1 = new Playlist("Koen", "Playlist2");
-//        playlistList.add(playlist);
-//        playlistList.add(playlist1);
-//        return playlistList;
     }
 
     public void updatePlaylistName(String ownerName, String oldName, String newName) {
@@ -34,5 +28,9 @@ public class PlaylistService {
 
     public void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName) {
         dao.addTrackToPlaylist(title, performer, playlistName, ownerName);
+    }
+
+    public Playlist getPlaylist(String ownerName, String playlistName) {
+        return dao.getPlaylist(ownerName, playlistName);
     }
 }

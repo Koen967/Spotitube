@@ -11,4 +11,6 @@ public interface PlaylistDAO {
     List<Playlist> getPlaylistsFromOwner(String ownerName);
     void updatePlaylistName(String ownerName, String oldName, String newName);
     void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName);
+
+    Playlist getPlaylist(String ownerName, String playlistName);
 }
