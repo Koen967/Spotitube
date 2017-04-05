@@ -4,6 +4,7 @@ import oose.dea.dataAccess.databaseConnection.DatabaseConnection;
 import oose.dea.presentation.domainmodel.Playlist;
 
 import javax.enterprise.context.Dependent;
+import javax.inject.Inject;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,15 +17,16 @@ import java.util.List;
  */
 @Dependent
 public class PlaylistDAOImpl implements PlaylistDAO {
-    DatabaseConnection connection = new DatabaseConnection();
-    Connection conn = connection.getConnection();
+
+    @Inject
+    DatabaseConnection connection;
 
     public List<Playlist> getPlaylistsFromOwner(String ownerName) {
         List<Playlist> playlists = new ArrayList<Playlist>();
-        try{
+        try {
             PreparedStatement preparedStatement;
             String query = "SELECT playlistName FROM Playlist WHERE ownerName = ?";
-            preparedStatement = conn.prepareStatement(query);
+            preparedStatement = connection.getConnection().prepareStatement(query);
             preparedStatement.setString(1, ownerName);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
@@ -39,10 +41,10 @@ public class PlaylistDAOImpl implements PlaylistDAO {
     }
 
     public void updatePlaylistName(String ownerName, String oldName, String newName) {
-        try{
+        try {
             PreparedStatement preparedStatement;
             String query = "UPDATE Playlist SET playlistName = ? WHERE ownerName = ? AND playlistName = ?";
-            preparedStatement = conn.prepareStatement(query);
+            preparedStatement = connection.getConnection().prepareStatement(query);
             preparedStatement.setString(1, newName);
             preparedStatement.setString(2, ownerName);
             preparedStatement.setString(3, oldName);
@@ -56,7 +58,7 @@ public class PlaylistDAOImpl implements PlaylistDAO {
         try {
             PreparedStatement preparedStatement;
             String query = "INSERT INTO Availability VALUES (?, ?, ?, ?, 0)";
-            preparedStatement = conn.prepareStatement(query);
+            preparedStatement = connection.getConnection().prepareStatement(query);
             preparedStatement.setString(1, ownerName);
             preparedStatement.setString(2, playlistName);
             preparedStatement.setString(3, performer);
@@ -68,10 +70,10 @@ public class PlaylistDAOImpl implements PlaylistDAO {
     }
 
     public Playlist getPlaylist(String ownerName, String playlistName) {
-        try{
+        try {
             PreparedStatement preparedStatement;
             String query = "SELECT playlistName FROM Playlist WHERE ownerName = ? AND playlistName = ?";
-            preparedStatement = conn.prepareStatement(query);
+            preparedStatement = connection.getConnection().prepareStatement(query);
             preparedStatement.setString(1, ownerName);
             preparedStatement.setString(2, playlistName);
             ResultSet rs = preparedStatement.executeQuery();
@@ -85,5 +87,9 @@ public class PlaylistDAOImpl implements PlaylistDAO {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void setConn(DatabaseConnection conn) {
+        this.connection = conn;
     }
 }

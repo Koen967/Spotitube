@@ -1,6 +1,6 @@
 package oose.dea.dataAccess.databaseConnection;
 
-import java.io.FileInputStream;
+import javax.enterprise.context.Dependent;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+@Dependent
 public class DatabaseConnection {
 
     public Connection getConnection() {

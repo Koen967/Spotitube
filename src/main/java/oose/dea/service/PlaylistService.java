@@ -33,4 +33,8 @@ public class PlaylistService {
     public Playlist getPlaylist(String ownerName, String playlistName) {
         return dao.getPlaylist(ownerName, playlistName);
     }
+
+    public void setDao(PlaylistDAO dao) {
+        this.dao = dao;
+    }
 }

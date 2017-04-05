@@ -1,7 +1,9 @@
 package oose.dea.dataAccess;
 
+import oose.dea.dataAccess.databaseConnection.DatabaseConnection;
 import oose.dea.presentation.domainmodel.Playlist;
 
+import java.sql.Connection;
 import java.util.List;
 
 /**
@@ -13,4 +15,5 @@ public interface PlaylistDAO {
     void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName);
 
     Playlist getPlaylist(String ownerName, String playlistName);
+    void setConn(DatabaseConnection conn);
 }

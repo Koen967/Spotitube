@@ -18,7 +18,7 @@ public class Track {
     }
 
     public void toggle() {
-
+        this.setOfflineAvailable(!offlineAvailable);
     }
 
     public boolean isOfflineAvailable() {
