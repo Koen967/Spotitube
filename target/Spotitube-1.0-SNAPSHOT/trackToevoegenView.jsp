@@ -73,7 +73,7 @@
     <div class="row">
         <form method="post">
             <button class="btn btn-default col-md-2 col-md-offset-1" type="submit" name="back" value="back">Terug</button>
-            <input type="search" class="col-md-2"  name="searchField">
+            <input type="search" class="col-md-2"  name="searchEntry">
             <button class="btn btn-default col-md-2" type="submit" name="search" value="search">Zoek</button>
         </form>
     </div>

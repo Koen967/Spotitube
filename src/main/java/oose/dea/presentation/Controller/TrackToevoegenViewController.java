@@ -25,7 +25,12 @@ public class TrackToevoegenViewController extends HttpServlet {
     PlaylistService playlistService;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Track> trackList = trackService.getTracksNotInPlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"));
+        List<Track> trackList;
+        if (request.getParameter("search") != null) {
+            trackList = trackService.getTracksNotInPlaylistSearch(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"), request.getParameter("search"));
+        } else {
+            trackList = trackService.getTracksNotInPlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("name"));
+        }
         request.setAttribute("trackList", trackList);
         request.getRequestDispatcher("trackToevoegenView.jsp").forward(request, response);
     }
@@ -38,7 +43,7 @@ public class TrackToevoegenViewController extends HttpServlet {
         } else if (request.getParameter("back") != null) {
             response.sendRedirect(uri + "/managePlaylistView?ownerName=" + request.getSession().getAttribute("ownerName").toString());
         } else if (request.getParameter("search") != null) {
-
+            response.sendRedirect(uri + "/trackToevoegenView?name=" + request.getParameter("name") + "&search=" + request.getParameter("searchEntry"));
         }
     }
 }

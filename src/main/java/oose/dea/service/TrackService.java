@@ -32,4 +32,8 @@ public class TrackService {
 //        trackList.add(track2);
 //        return trackList;
     }
+
+    public List<Track> getTracksNotInPlaylistSearch(String ownerName, String name, String search) {
+        return dao.getTracksNotInPlaylistSearch(ownerName, name, search);
+    }
 }
