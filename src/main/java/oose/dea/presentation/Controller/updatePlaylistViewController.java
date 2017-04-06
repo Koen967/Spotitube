@@ -14,7 +14,7 @@ import java.io.IOException;
  * Created by koen on 26-3-2017.
  */
 @WebServlet("/updatePlaylistView")
-public class updatePlaylistViewController extends HttpServlet {
+public class UpdatePlaylistViewController extends HttpServlet {
 
     @Inject
     PlaylistService service;

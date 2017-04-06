@@ -24,7 +24,7 @@
             <form method="post">
                     <%--${current.getName()}<br>--%>
                 <div class="col-md-3" id="playlistNaam">
-                    <a href=""><c:out value="${current.getPlaylistName()}"/></a>
+                    <a href="/Spotitube-1.0-SNAPSHOT/tracksInPlaylistView?ownerName=<c:out value="${current.getOwnerName()}"/>&playlistName=<c:out value="${current.getPlaylistName()}"/>"><c:out value="${current.getPlaylistName()}"/></a>
                     <input type="hidden" name="playlistName" value="<c:out value="${current.getPlaylistName()}"/> ">
                 </div>
                 <div class="col-md-3" id="wijzigen">

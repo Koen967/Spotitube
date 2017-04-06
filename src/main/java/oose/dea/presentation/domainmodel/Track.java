@@ -8,25 +8,12 @@ public class Track {
     private String title;
     private String url;
     private int duration;
-    private boolean offlineAvailable;
 
     public Track(String performer, String title, String url, int duration) {
         this.performer = performer;
         this.title = title;
         this.url = url;
         this.duration = duration;
-    }
-
-    public void toggle() {
-        this.setOfflineAvailable(!offlineAvailable);
-    }
-
-    public boolean isOfflineAvailable() {
-        return this.offlineAvailable;
-    }
-
-    public void setOfflineAvailable(boolean offlineAvailable) {
-        this.offlineAvailable = offlineAvailable;
     }
 
     public String getPerformer() {

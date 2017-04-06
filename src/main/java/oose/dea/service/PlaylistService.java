@@ -1,12 +1,12 @@
 package oose.dea.service;
 
 import oose.dea.dataAccess.PlaylistDAO;
-import oose.dea.dataAccess.PlaylistDAOImpl;
-import oose.dea.presentation.domainmodel.Playlist;
+import oose.dea.presentation.domainmodel.*;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -34,7 +34,15 @@ public class PlaylistService {
         return dao.getPlaylist(ownerName, playlistName);
     }
 
+    public List<Availability> getTracksInPlaylist(String ownerName, String playlistName) {
+        return dao.getTracksInPlaylist(ownerName, playlistName);
+    }
+
     public void setDao(PlaylistDAO dao) {
         this.dao = dao;
+    }
+
+    public void deletePlaylist(String ownerName, String playlistName) {
+        dao.deletePlaylist(ownerName, playlistName);
     }
 }

@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cca11621-8f5c-4634-abcb-7e6345fbe4eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/oose.dea/dataAccess/TestPlaylistDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/oose.dea/service/TestPlaylistService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TracksInPlaylistViewController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/tracksInPlaylistView.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/PlaylistDAO.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/PlaylistDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/databaseConnection/DatabaseConnection.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/databaseConnection/DatabaseConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/playlistDAOImpl.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/dataAccess/playlistDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/domainmodel/Availability.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/domainmodel/Availability.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/domainmodel/Track.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/presentation/domainmodel/Track.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/WEB-INF/classes/oose/dea/service/PlaylistService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/PlaylistDAO.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/PlaylistDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/databaseConnection/DatabaseConnection.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/databaseConnection/DatabaseConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/playlistDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/dataAccess/playlistDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/presentation/domainmodel/Availability.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/presentation/domainmodel/Availability.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/presentation/domainmodel/Track.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/presentation/domainmodel/Track.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/oose/dea/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/classes/oose/dea/service/PlaylistService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spotitube.iml" afterPath="$PROJECT_DIR$/Spotitube.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/databaseConnection/DatabaseConnection.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/databaseConnection/DatabaseConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/playlistDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/playlistDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Availability.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Availability.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/managePlaylistView.jsp" afterPath="$PROJECT_DIR$/target/Spotitube-1.0-SNAPSHOT/managePlaylistView.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="Spotitube.iws" />
@@ -47,31 +56,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PlaylistDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java">
+      <file leaf-file-name="ManagePlaylistViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/ManagePlaylistViewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagePlaylistViewRestfullService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/restfullService/ManagePlaylistViewRestfullService.java">
+      <file leaf-file-name="PlaylistDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1490944559025" expanded="true" signature="1733:1816" placeholder="@{...}" />
-                <marker date="1490944559025" expanded="true" signature="1940:2089" placeholder="{...}" />
-                <marker date="1490944559025" expanded="true" signature="2097:2159" placeholder="@{...}" />
-                <marker date="1490944559025" expanded="false" signature="2195:2208" placeholder=" { " />
-                <marker date="1490944559025" expanded="false" signature="2229:2237" placeholder=" }" />
-                <marker date="1490944559025" expanded="true" signature="2507:2576" placeholder="@{...}" />
-                <marker date="1490944559025" expanded="true" signature="2630:2844" placeholder="{...}" />
-              </folding>
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,12 +80,21 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#1356#1357#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Song.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Song.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,53 +103,60 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <caret line="130" column="57" selection-start-line="130" selection-start-column="57" selection-end-line="130" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#662#672#0" expanded="true" />
-                <element signature="e#3605#3606#0" expanded="true" />
-                <element signature="e#3643#3644#0" expanded="true" />
-                <marker date="1491319270656" expanded="true" signature="767:820" placeholder="SELECT playl..Playlist..." />
-                <marker date="1491319270656" expanded="true" signature="1542:1619" placeholder="UPDATE Playl..." />
-                <marker date="1491319270656" expanded="true" signature="2197:2244" placeholder="INSERT INTO Availability..." />
-                <marker date="1491319270656" expanded="true" signature="2845:2898" placeholder="SELECT playl..Playlist..." />
-                <marker date="1491319270656" expanded="true" signature="2845:2919" placeholder="SELECT playl..Playlist..." />
+                <element signature="e#581#591#0" expanded="true" />
+                <element signature="e#3623#3637#0" expanded="true" />
+                <marker date="1491471075135" expanded="true" signature="686:739" placeholder="SELECT playl..Playlist..." />
+                <marker date="1491471075135" expanded="true" signature="1461:1538" placeholder="UPDATE Playl..." />
+                <marker date="1491471075135" expanded="true" signature="2116:2163" placeholder="INSERT INTO Availability..." />
+                <marker date="1491471075135" expanded="true" signature="2764:2817" placeholder="SELECT playl..Playlist..." />
+                <marker date="1491471075135" expanded="true" signature="2764:2838" placeholder="SELECT playl..Playlist..." />
+                <marker date="1491471075135" expanded="true" signature="5396:5457" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestPlaylistDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/oose.dea/dataAccess/TestPlaylistDAO.java">
+      <file leaf-file-name="TracksInPlaylistViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TracksInPlaylistViewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-              <folding />
+              <caret line="35" column="132" selection-start-line="35" selection-start-column="132" selection-end-line="35" selection-end-column="132" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managePlaylistView.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="managePlaylistView.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.483871">
-              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.33842537">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Track.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java">
+      <file leaf-file-name="TrackToevoegenViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TrackToevoegenViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5496063">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1317#1318#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracksInPlaylistView.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/tracksInPlaylistView.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="7.032258">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,29 +171,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestPlaylistService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/oose.dea/service/TestPlaylistService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#929#939#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -199,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/updatePlaylistView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/TrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/Spotitube.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/ManagePlaylistViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/TrackToevoegenViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/Controller/updatePlaylistViewController.java" />
@@ -217,16 +219,21 @@
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Song.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/trackToevoegenView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" />
         <option value="$PROJECT_DIR$/src/test/java/oose.dea/service/TestPlaylistService.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/databaseConnection/DatabaseConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/oose.dea/dataAccess/TestPlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/TrackTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/TrackType.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Video.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Availability.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/tracksInPlaylistView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TracksInPlaylistViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/ManagePlaylistViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -447,6 +454,10 @@
               <option name="myItemId" value="dea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -550,6 +561,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spotitube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spotitube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -560,6 +601,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1099,7 +1141,7 @@
       <workItem from="1490379925314" duration="1917000" />
       <workItem from="1490386061857" duration="7000" />
       <workItem from="1490537774707" duration="7372000" />
-      <workItem from="1490601226354" duration="67719000" />
+      <workItem from="1490601226354" duration="75139000" />
     </task>
     <servers />
   </component>
@@ -1136,7 +1178,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80529000" />
+    <option name="totallyTimeSpent" value="87949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1151,7 +1193,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26994535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26994535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1195,16 +1237,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/ManagePlaylistViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1215,7 +1247,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/updatePlaylistViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/UpdatePlaylistViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1285,14 +1317,14 @@
           <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#662#672#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3643#3644#0" expanded="true" />
-            <marker date="1491319270656" expanded="true" signature="767:820" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="1542:1619" placeholder="UPDATE Playl..." />
-            <marker date="1491319270656" expanded="true" signature="2197:2244" placeholder="INSERT INTO Availability..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2898" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2919" placeholder="SELECT playl..Playlist..." />
+            <element signature="e#581#591#0" expanded="true" />
+            <element signature="e#3623#3637#0" expanded="true" />
+            <marker date="1491471075135" expanded="true" signature="686:739" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="1461:1538" placeholder="UPDATE Playl..." />
+            <marker date="1491471075135" expanded="true" signature="2116:2163" placeholder="INSERT INTO Availability..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2817" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2838" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="5396:5457" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1369,14 +1401,14 @@
           <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#662#672#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3643#3644#0" expanded="true" />
-            <marker date="1491319270656" expanded="true" signature="767:820" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="1542:1619" placeholder="UPDATE Playl..." />
-            <marker date="1491319270656" expanded="true" signature="2197:2244" placeholder="INSERT INTO Availability..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2898" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2919" placeholder="SELECT playl..Playlist..." />
+            <element signature="e#581#591#0" expanded="true" />
+            <element signature="e#3623#3637#0" expanded="true" />
+            <marker date="1491471075135" expanded="true" signature="686:739" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="1461:1538" placeholder="UPDATE Playl..." />
+            <marker date="1491471075135" expanded="true" signature="2116:2163" placeholder="INSERT INTO Availability..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2817" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2838" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="5396:5457" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1478,7 +1510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/updatePlaylistViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/UpdatePlaylistViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -1494,14 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Playlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/restfullService/UpdatePlaylistViewRestfullService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1509,14 +1533,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TrackToevoegenViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1532,41 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Availability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18932875">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/TrackDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#774#781#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/trackToevoegenView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.677419">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Song.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1587,14 +1568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/ManagePlaylistViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/databaseConnection/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1602,44 +1575,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#662#672#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3643#3644#0" expanded="true" />
-            <marker date="1491319270656" expanded="true" signature="767:820" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="1542:1619" placeholder="UPDATE Playl..." />
-            <marker date="1491319270656" expanded="true" signature="2197:2244" placeholder="INSERT INTO Availability..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2898" placeholder="SELECT playl..Playlist..." />
-            <marker date="1491319270656" expanded="true" signature="2845:2919" placeholder="SELECT playl..Playlist..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1665,8 +1600,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#929#939#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#929#939#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1679,10 +1614,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Playlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.483871">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/TrackDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Availability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Song.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1695,16 +1672,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/domainmodel/Track.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tracksInPlaylistView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5496063">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state vertical-scroll-proportion="7.032258">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/trackToevoegenView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025851939">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TracksInPlaylistViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="132" selection-start-line="35" selection-start-column="132" selection-end-line="35" selection-end-column="132" />
           <folding>
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/TrackToevoegenViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/presentation/controller/ManagePlaylistViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/service/PlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/dataAccess/PlaylistDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="57" selection-start-line="130" selection-start-column="57" selection-end-line="130" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#591#0" expanded="true" />
+            <element signature="e#3623#3637#0" expanded="true" />
+            <marker date="1491471075135" expanded="true" signature="686:739" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="1461:1538" placeholder="UPDATE Playl..." />
+            <marker date="1491471075135" expanded="true" signature="2116:2163" placeholder="INSERT INTO Availability..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2817" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="2764:2838" placeholder="SELECT playl..Playlist..." />
+            <marker date="1491471075135" expanded="true" signature="5396:5457" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/managePlaylistView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33842537">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
