@@ -37,10 +37,10 @@ public class ManagePlaylistViewController extends HttpServlet {
         } else if (request.getParameter("add") != null) {
             response.sendRedirect(uri + "/trackToevoegenView?name=" + name);
         } else if (request.getParameter("create") != null) {
-            response.sendRedirect(uri + "/trackToevoegenView");
+            response.sendRedirect(uri + "/playlistToevoegenView");
         } else if (request.getParameter("delete") != null) {
             service.deletePlaylist(request.getSession().getAttribute("ownerName").toString(), request.getParameter("playlistName"));
-            request.getRequestDispatcher("managePlaylistView.jsp").forward(request, response);
+            response.sendRedirect(uri + "/managePlaylistView?ownerName=" + request.getSession().getAttribute("ownerName").toString());
         }
     }
 }

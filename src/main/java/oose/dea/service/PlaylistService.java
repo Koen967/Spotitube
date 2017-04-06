@@ -38,11 +38,15 @@ public class PlaylistService {
         return dao.getTracksInPlaylist(ownerName, playlistName);
     }
 
-    public void setDao(PlaylistDAO dao) {
-        this.dao = dao;
-    }
-
     public void deletePlaylist(String ownerName, String playlistName) {
         dao.deletePlaylist(ownerName, playlistName);
+    }
+
+    public void addPlaylist(String ownerName, String playlistName) {
+        dao.addPlaylist(ownerName, playlistName);
+    }
+
+    public void setDao(PlaylistDAO dao) {
+        this.dao = dao;
     }
 }

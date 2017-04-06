@@ -135,6 +135,19 @@ public class PlaylistDAOImpl implements PlaylistDAO {
         }
     }
 
+    public void addPlaylist(String ownerName, String playlistName) {
+        try {
+            PreparedStatement preparedStatement;
+            String query = "INSERT INTO Playlist VALUES(?, ?)";
+            preparedStatement = connection.getConnection().prepareStatement(query);
+            preparedStatement.setString(1, ownerName);
+            preparedStatement.setString(2, playlistName);
+            preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void setConn(DatabaseConnection conn) {
         this.connection = conn;
     }
