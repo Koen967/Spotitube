@@ -1,11 +1,14 @@
 package oose.dea.dataAccess;
 
-import oose.dea.dataAccess.databaseConnection.DatabaseConnection;
 import oose.dea.presentation.domainmodel.*;
+import org.apache.commons.io.IOUtils;
+import org.json.JSONArray;
 
-import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import java.sql.*;
+import javax.annotation.ManagedBean;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -13,26 +16,30 @@ import java.util.List;
 /**
  * Created by koen on 24-3-2017.
  */
-@Dependent
+@ManagedBean
 public class PlaylistDAOImpl implements PlaylistDAO {
-
-    @Inject
-    DatabaseConnection connection;
 
     public List<Playlist> getPlaylistsFromOwner(String ownerName) {
         List<Playlist> playlists = new ArrayList<Playlist>();
         try {
-            PreparedStatement preparedStatement;
-            String query = "SELECT playlistName FROM Playlist WHERE ownerName = ?";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, ownerName);
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                String playlistName = rs.getString("playlistName");
-                Playlist playlist = new Playlist(ownerName, playlistName);
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            JSONArray myResponse = new JSONArray(result);
+            for (int i = 0; i < myResponse.length(); i++) {
+                Playlist playlist = new Playlist(myResponse.getJSONObject(i).getString("ownerName"), myResponse.getJSONObject(i).getString("playlistName"));
                 playlists.add(playlist);
             }
-        } catch (SQLException e) {
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return playlists;
@@ -40,115 +47,137 @@ public class PlaylistDAOImpl implements PlaylistDAO {
 
     public void updatePlaylistName(String ownerName, String oldName, String newName) {
         try {
-            PreparedStatement preparedStatement;
-            String query = "UPDATE Playlist SET playlistName = ? WHERE ownerName = ? AND playlistName = ?";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, newName);
-            preparedStatement.setString(2, ownerName);
-            preparedStatement.setString(3, oldName);
-            preparedStatement.executeQuery();
-        } catch (SQLException e) {
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName + "/" + oldName);
+            String json = "{ \"newPlaylistName\": \"" + newName + "\" }";
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            con.setDoInput(true);
+            con.setDoOutput(true);
+            con.setRequestMethod("PUT");
+            OutputStream os = con.getOutputStream();
+            os.write(json.getBytes("UTF-8"));
+            os.close();
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            System.out.println(result);
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void addTrackToPlaylist(String title, String performer, String playlistName, String ownerName) {
         try {
-            PreparedStatement preparedStatement;
-            String query = "INSERT INTO Availability VALUES (?, ?, ?, ?, 0)";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, ownerName);
-            preparedStatement.setString(2, playlistName);
-            preparedStatement.setString(3, performer);
-            preparedStatement.setString(4, title);
-            preparedStatement.executeQuery();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName + "/" + playlistName + "/songs");
+            String json = "{ \"title\": \"" + title + "\", \"performer\": \"" + performer + "\" }";
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-    public Playlist getPlaylist(String ownerName, String playlistName) {
-        try {
-            PreparedStatement preparedStatement;
-            String query = "SELECT playlistName FROM Playlist WHERE ownerName = ? AND playlistName = ?";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, ownerName);
-            preparedStatement.setString(2, playlistName);
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                ownerName = rs.getString("ownerName");
-                playlistName = rs.getString("playlistName");
-                Playlist playlist = new Playlist(ownerName, playlistName);
-                return playlist;
-            }
-        } catch (SQLException e) {
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            con.setDoInput(true);
+            con.setDoOutput(true);
+            con.setRequestMethod("PUT");
+            OutputStream os = con.getOutputStream();
+            os.write(json.getBytes("UTF-8"));
+            os.close();
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            System.out.println(result);
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
     }
 
     public List<Availability> getTracksInPlaylist(String ownerName, String playlistName) {
         List<Availability> availabilities = new ArrayList<Availability>();
-        try{
-            CallableStatement cs = connection.getConnection().prepareCall("{call spd_getTracksInPlaylist(?, ?)}");
-            cs.setString(1, ownerName);
-            cs.setString(2, playlistName);
-            ResultSet rs = cs.executeQuery();
-            while (rs.next()) {
-                String performer = rs.getString("performer");
-                String title = rs.getString("title");
-                int duration = rs.getInt("duration");
-                boolean offlineAvailable = rs.getBoolean("offlineAvailable");
+        try {
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName + "/" + playlistName + "/songs");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-                if (rs.getString("album") != null) {
-                    String album = rs.getString("album");
-                    Song song = new Song(performer, title, null, duration, album);
-                    Availability availability = new Availability(offlineAvailable, song);
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            JSONArray myResponse = new JSONArray(result);
+            for (int i = 0; i < myResponse.length(); i++) {
+                if (myResponse.getJSONObject(i).has("album")) {
+                    Track track = new Song(myResponse.getJSONObject(i).getString("performer"), myResponse.getJSONObject(i).getString("title"), myResponse.getJSONObject(i).getString("url"), myResponse.getJSONObject(i).getInt("duration"), myResponse.getJSONObject(i).getString("album"));
+                    Availability availability = new Availability(myResponse.getJSONObject(i).getBoolean("offlineAvailable"), track);
                     availabilities.add(availability);
-                } else {
-                    int playCount = rs.getInt("playCount");
+                } else  {
+                    String publicationDateString = myResponse.getJSONObject(i).get("publicationDate").toString();
                     Calendar publicationDate = Calendar.getInstance();
-                    publicationDate.setTime(rs.getDate("publicationDate"));
-                    String description = rs.getString("description");
-                    Video video = new Video(performer, title, null, duration, playCount, publicationDate, description);
-                    Availability availability = new Availability(offlineAvailable, video);
+                    publicationDate.set(2018, 03, 15);
+                    Track track = new Video(myResponse.getJSONObject(i).getString("performer"), myResponse.getJSONObject(i).getString("title"), myResponse.getJSONObject(i).getString("url"), myResponse.getJSONObject(i).getInt("duration"), myResponse.getJSONObject(i).getInt("playCount"), publicationDate, myResponse.getJSONObject(i).getString("description"));
+                    Availability availability = new Availability(myResponse.getJSONObject(i).getBoolean("offlineAvailable"), track);
                     availabilities.add(availability);
                 }
             }
-        } catch (SQLException e) {
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
         return availabilities;
     }
 
     public void deletePlaylist(String ownerName, String playlistName) {
         try {
-            PreparedStatement preparedStatement;
-            String query = "DELETE FROM playlist WHERE ownerName = ? AND playlistName = ?";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, ownerName);
-            preparedStatement.setString(2, playlistName);
-            preparedStatement.executeQuery();
-        } catch (SQLException e) {
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName + "/" + playlistName);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            con.setDoInput(true);
+            con.setDoOutput(true);
+            con.setRequestMethod("DELETE");
+            OutputStream os = con.getOutputStream();
+            os.close();
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            System.out.println(result);
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void addPlaylist(String ownerName, String playlistName) {
         try {
-            PreparedStatement preparedStatement;
-            String query = "INSERT INTO Playlist VALUES(?, ?)";
-            preparedStatement = connection.getConnection().prepareStatement(query);
-            preparedStatement.setString(1, ownerName);
-            preparedStatement.setString(2, playlistName);
-            preparedStatement.executeQuery();
-        } catch (SQLException e) {
+            URL url = new URL("http://localhost:3000/playlists/" + ownerName + "/" + playlistName);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            con.setDoInput(true);
+            con.setDoOutput(true);
+            con.setRequestMethod("POST");
+            OutputStream os = con.getOutputStream();
+            os.close();
+            int status = con.getResponseCode();
+            InputStream in = new BufferedInputStream(con.getInputStream());
+            String result = IOUtils.toString(in, "UTF-8");
+            System.out.println(result);
+            in.close();
+            con.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public void setConn(DatabaseConnection conn) {
-        this.connection = conn;
     }
 }

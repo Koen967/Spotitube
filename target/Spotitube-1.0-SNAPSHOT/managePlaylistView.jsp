@@ -47,9 +47,6 @@
             <div class="col-md-3">
                 <button class="btn btn-default" type="submit" name="create" value="create">Nieuwe playlist</button>
             </div>
-            <div class="col-md-3">
-                <button class="btn btn-default" type="submit" name="search" value="search">Zoek track</button>
-            </div>
         </form>
     </div>
 </div>

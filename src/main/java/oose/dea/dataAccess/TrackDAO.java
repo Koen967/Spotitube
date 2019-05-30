@@ -10,6 +10,4 @@ import java.util.List;
 public interface TrackDAO {
     List<Track> getTracksNotInPlaylist(String ownerName, String playlistName);
     List<Track> getTracksNotInPlaylistSearch(String ownerName, String name, String search);
-    List<Track> getTracks();
-    List<Track> getTracksSearch(String search);
 }

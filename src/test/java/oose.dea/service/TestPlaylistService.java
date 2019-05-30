@@ -1,3 +1,4 @@
+/*
 package oose.dea.service;
 
 import oose.dea.dataAccess.PlaylistDAO;
@@ -17,9 +18,11 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
+*/
 /**
  * Created by koen on 3-4-2017.
- */
+ *//*
+
 @RunWith(MockitoJUnitRunner.class)
 public class TestPlaylistService {
 
@@ -67,3 +70,4 @@ public class TestPlaylistService {
     }
 
 }
+*/

@@ -4,7 +4,6 @@ import oose.dea.presentation.domainmodel.Track;
 import oose.dea.service.PlaylistService;
 import oose.dea.service.TrackService;
 
-import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,10 +18,8 @@ import java.util.List;
 @WebServlet("/trackToevoegenView")
 public class TrackToevoegenViewController extends HttpServlet {
 
-    @Inject
-    TrackService trackService;
-    @Inject
-    PlaylistService playlistService;
+    TrackService trackService = new TrackService();
+    PlaylistService playlistService = new PlaylistService();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Track> trackList;

@@ -1,10 +1,8 @@
 package oose.dea.presentation.controller;
 
 import oose.dea.presentation.domainmodel.Availability;
-import oose.dea.presentation.domainmodel.Track;
 import oose.dea.service.PlaylistService;
 
-import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +17,7 @@ import java.util.List;
 @WebServlet("/tracksInPlaylistView")
 public class TracksInPlaylistViewController extends HttpServlet {
 
-    @Inject
-    PlaylistService service;
+    PlaylistService service = new PlaylistService();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String ownerName = request.getParameter("ownerName");
